@@ -1,3 +1,4 @@
-theme: jekyll-theme-cayman
+name: KH
 title: KRig
 description: Rigging and Technical Animation
+markdown: kramdown
