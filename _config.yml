@@ -1,4 +1,19 @@
-name: KH
+# Site settings
 title: KRig
-description: Rigging and Technical Animation
+email: k.hoenselaers@gmail.com
+description: >
+    KRig : Rigging, Pipeline and Technical Animation.
+baseurl: 
+
+# Build settings
 markdown: kramdown
+
+
+highlighter: rouge
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+    
+exclude: [serve.sh, build.sh, Gemfile, Gemfile.lock]

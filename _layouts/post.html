@@ -6,13 +6,6 @@ layout: default
 
   <header class="post-header">
     <div>
-        <p style="float: right;">
-            <span class="right contacticon">
-                {% if page.github %}<a href="{{ page.github }}"><i class="fa fa-github-square"></i></a>{% endif %}
-                {% if page.github-docs %}<a href="{{ page.github-docs }}"><i class="fa fa-book"></i></a>{% endif %}
-                {% if page.gumroad %}<script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script><a href="{{ page.gumroad }}"><i class="fa fa-download"></i></a>{% endif %}
-            </span>
-        </p>
         <h1 class="post-title">{{ page.title }}</h1>
         <p class="post-meta">{{ page.date | date: "%B %-d, %Y — %H:%M" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
@@ -21,7 +14,7 @@ layout: default
 
   </header>
 
-  <article class="post-content">
+  <article class="post">
     {{ content }}
   </article>
   <hr>
