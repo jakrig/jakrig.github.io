@@ -4,7 +4,7 @@
  */
 .site-header {
 border-bottom: 1px solid $grey-color-light;
-background-color: #fff;
+background-color: #000;
 opacity: 0.75;
 position:fixed;
 left:0px;
@@ -15,7 +15,7 @@ z-index: 50;
 }
 
 .site-title {
-font-size: 20px;
+font-size: 15px;
 line-height: $nav-height;
 letter-spacing: -1px;
 margin-bottom: 0;
@@ -209,7 +209,7 @@ display: table;
 clear: both;
 }
 .project {
-width: 33.33%;
+width: 25%;
 height: auto;
 float: left;
 vertical-align: middle;
@@ -270,12 +270,15 @@ padding: $img_spacing;
 float: right;
 }
 .one {
-width:33.33%;
+width:25%;
 }
 .two {
-width: 66.66%;
+width: 50%;
 }
 .three{
+width: 75%;
+}
+.four{
 width: 100%;
 }
 .caption{
