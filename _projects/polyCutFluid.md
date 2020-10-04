@@ -16,7 +16,7 @@ Experimenting with polyCuts for an animatable fluid simulation.
 <p class="justify">Smth about the setup.</p>
 
 <h4>Conclusion</h4>
-<p align="center"><img src="/icons/fluid/fluid_node_network.png"/></p>
+<p align="center"><img src="/icons/fluid/fluid_node_network.jpeg"/></p>
 <p class="justify">Smth about the above.</p>
 
 
