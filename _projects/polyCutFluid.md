@@ -9,6 +9,7 @@ tag: [maya, rigging, tools]
 ---
 Experimenting with polyCuts to find an animatable fluid solution.
 <p align="center"><iframe src="https://player.vimeo.com/video/351359997?color=ff9933&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+
 <h4>Method</h4> 
 <img class="col three" src="/icons/fluid/fluid_setup.png"/>
 <i>TEST</i>
@@ -16,9 +17,9 @@ Experimenting with polyCuts to find an animatable fluid solution.
 <p class="justify"> 
 This setup requires at least a root control, fluid control and a fluid mesh. 
 The fluid control has attributes for an air gap, air gap blending, and to switch between world and local space. 
-Volume preservation is also included. 
-</p>
-<p align="center"><img src="/icons/fluid/fluid_outliner.png"/></p>
+Volume preservation is also included.</p>
+
+<img class="col three" src="/icons/fluid/fluid_outliner.png"/>
 
 <h4>Conclusion</h4>
 <p align="center"><img src="/icons/fluid/fluid_node_network.jpg"/></p>
