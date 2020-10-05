@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Utils
-permalink: /utils/
+title: About
+permalink: /about/
 order: 5
 ---
 
 {% assign sorted_projects = site.projects | sort: "date" %}
 {% assign reversed_projects = sorted_projects | reverse %}
 {% for project in reversed_projects %}
-{% if project.category contains "utils" %}
+{% if project.category contains "about" %}
 <div class="project ">
     <div class="thumbnail">
         <a href="{{ site.baseurl }}{{ project.url }}">
