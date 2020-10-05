@@ -17,7 +17,7 @@ Experimenting with polyCuts for an animatable fluid simulation.
 
 <h4>Conclusion</h4>
 <p align="center"><img src="/icons/fluid/fluid_node_network.jpg"/></p>
-<p class="justify">Yada yada node network.</p>
+<p class="justify">This Setup is meh. solid, quick and simple tho. at least it provides a good base for other uses</p>
 
 
 
