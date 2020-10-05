@@ -196,6 +196,8 @@ pre {
  */
 
 .wrapper {
+    max-width: -webkit-calc(1200px - (#{$horizontal-spacing-unit} * 2));
+    max-width:         calc(1200px - (#{$horizontal-spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $horizontal-spacing-unit;
@@ -203,6 +205,8 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
+        max-width: -webkit-calc(1200px - (#{$horizontal-spacing-unit}));
+        max-width:         calc(1200px - (#{$horizontal-spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
