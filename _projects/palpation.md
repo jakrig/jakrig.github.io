@@ -25,7 +25,7 @@ Finally create a falloff attribute on the pressure control and plug it into the 
 <h3>Other setups</h3>
 <p class="justify"> 
 You can also create a similar setup using lattices. In this case just parent your lattice to your pressure control 
-and the lattice base to your palpation control. The falloff attribute needs to be plugged into the .outSideFalloffDist 
+and the lattice base to your palpation control. The falloff attribute needs to be plugged into the .outsideFalloffDist 
 attribute of your lattice ffd.
 </p>
 <p align="center"><img src="/icons/palpation/palpation_lattice_outliner.png"/></p>
