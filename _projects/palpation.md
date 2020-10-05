@@ -2,7 +2,7 @@
 layout: post
 title: Connecting controls to a softMod
 description: Connecting controls to a softMod to create palpation. 
-img: /icons/fluid/fluid.png
+img: /icons/palpation/icon.png
 date: 2018-07-08 19:18:36
 category: rigging, tools
 tag: [maya, rigging, tools]
