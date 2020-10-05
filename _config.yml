@@ -3,7 +3,8 @@ title: K-Rig
 email: k.hoenselaers@gmail.com
 description: >
     KRig : Rigging, Pipeline and Technical Animation.
-baseurl: 
+baseurl:
+url: http://k-rig.co.uk
 
 # Build settings
 markdown: kramdown
