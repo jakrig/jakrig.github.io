@@ -13,13 +13,13 @@ Experimenting with polyCuts to find an animatable fluid solution.
 <p align="center"><img src="/icons/fluid/fluid_graph.png"/></p>
 <p class="justify"> 
 This setup requires at least a root control, fluid control and a fluid mesh. 
-The fluid control has attributes for an air gap, air gap blending, and to switch between world and local space. 
-Volume preservation is also included. 
+The fluid control has attributes for an air gap, air gap blending and a switch between world and local space. 
+Volume preservation is also included. This setup was initially created at my previous work at Digital Surgery
 </p>
 <p align="center"><img src="/icons/fluid/fluid_outliner.png"/></p>
 
 <h4>Conclusion</h4>
-<p align="center"><img src="/icons/fluid/fluid_node_network.jpg"/></p>
+<p align="center"><img src="/icons/fluid/fluid_nodes.png"/></p>
 <p class="justify">This Setup isn't ideal, but it's still a quick, simple and solid solution if you don't want to use simulations.
 I did use this setup as a base for other uses, so it was worth looking into it. 
 </p>
