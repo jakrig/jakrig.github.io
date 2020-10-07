@@ -19,9 +19,7 @@ from jakrig.utils import api
 ```
 
 <h4>Authored by</h4>
-Koji H.
-
-Robert Joosten
+Koji H., Robert Joosten
 
 
 
