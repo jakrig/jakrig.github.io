@@ -28,7 +28,7 @@ def create(mesh, axis="Y", defaultSpeed=360):
     screw_ctrl.create("cirlce", "yellow")
     # Add speed attribute. The default value is by how many degrees you want the screw to turn when the control is
     # translated by 1
-    screw_ctrl.addAttr("speed", at="float", defaultValue=360)
+    screw_ctrl.addAttr("speed", at="float", defaultValue=defaultSpeed)
     # Next we need to create an empty transform as a child to our control. You can define any nodeType as an argument. 
     # Default is "transform".
     screw_parent = screw_ctrl.createChild("screw_parent")
@@ -44,9 +44,10 @@ def create(mesh, axis="Y", defaultSpeed=360):
 ```
 
 This is a very basic and simple example but as you can see, everything that is handled by maya (and more) can be handled using these meta classes.
-This is used as base for granular, automated rigging solutions. That way I have complete freedom and I'm not bound to the limitations of mayas
+This is used as base for granular, automated rigging solutions. Using this provides me with complete freedom and I'm not bound to the limitations of mayas
 internal systems. It also provides me with a much easier way to compile, save and load metaData.
-This is a short snippet of how it would be used in an auto rigging context.
+
+Here is a short snippet of how it would be used in an auto rigging context.
 
 ```python
 from jakrig.metaNodes import DepNode, DagNode, Joint
