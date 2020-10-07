@@ -2,7 +2,7 @@
 layout: post
 title: Personal pipeline documentation
 description: Personal pipeline documentation
-img: /icons/palpation/icon.png
+img: /icons/pipeline/jakrig_icon.png
 date: 2020-10-07 21:02:36
 category: rigging, pipeline
 tag: [maya, rigging, pipeline]
