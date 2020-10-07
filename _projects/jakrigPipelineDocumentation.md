@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jakrig pipeline documentation
+title: "jakrig" pipeline documentation
 description: Personal pipeline documentation
 img: /icons/palpation/icon.png
 date: 2020-10-07 21:02:36
@@ -12,13 +12,15 @@ that were written over the years and compiled into one rigging pipeline. This is
 solutions are subject to change.
 
 <h3>Usage</h3>
-pic of usage
+
+Examples:
 ```python
 from jakrig.utils import api
 ```
 
 <h4>Authored by</h4>
 Koji H.
+
 Robert Joosten
 
 
