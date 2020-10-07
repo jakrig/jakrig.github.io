@@ -15,6 +15,7 @@ solutions are subject to change. <a href="https://k-rig.co.uk/jakrig/">Link to d
 <h3>Usage</h3>
 
 Examples:
+
 ```python
 # Let's build a simple screw setup as an example.
 from jakrig.metaNodes import DepNode, DagNode
@@ -43,17 +44,18 @@ def create(mesh, axis="Y", defaultSpeed=360):
     constraints.matrixConstraint(screw_ctrl, mesh)
 ```
 
-This is a very basic and simple example but as you can see, everything that is handled by maya (and more) can be handled using these meta classes.
-This is used as base for granular, automated rigging solutions. Using this provides me with complete freedom and I'm not bound to the limitations of mayas
-internal systems. It also provides me with a much easier way to compile, save and load metaData.
+This is a very basic and simple example but as you can see, everything that's handled by maya (and more) can be done using these meta classes.
+This is best used as base for granular, automated rigging solutions. 
+Using this provides me with complete freedom and I'm not bound to the limitations of mayas internal systems. 
+It also provides me with a much easier way to compile, save and load metaData.
 
 Here is a short snippet of how it would be used in an auto rigging context.
 
 ```python
 from jakrig.metaNodes import DepNode, DagNode, Joint
 from jakrig.metaNodes.control.controlTypes import Control
-from jakrig.utils import attribute, curve, selection, size
-import maya.cmds as cmds
+from jakrig.utils import api, attribute, curve, selection, size
+from jakrig.parenting import constraints
 
 class MatrixIKSpline(DagNode):
     type = 'isSplineIKCurve'
@@ -85,6 +87,7 @@ class MatrixIKSpline(DagNode):
             'isSplineRootControl'
         )
 ```
+
 Systems in jakrig that are not yet included in this documentation:
  * jakrig auto rigging solutions
  * jakrig tools
