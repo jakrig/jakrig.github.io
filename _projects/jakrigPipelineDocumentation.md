@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "jakrig" pipeline documentation
+title: jakrig personal pipeline
 description: Personal pipeline documentation
 img: /icons/palpation/icon.png
 date: 2020-10-07 21:02:36
 category: rigging, pipeline
 tag: [maya, rigging, pipeline]
 ---
-This pipeline was created for personal use to support work within maya. It's based on various utilites, functions and classes
+The "jakrig" pipeline was created for personal use to support work within maya. It's based on various utilites, functions and classes
 that were written over the years and compiled into one rigging pipeline. This is a constant work in progress so all the systems and
 solutions are subject to change.
 
