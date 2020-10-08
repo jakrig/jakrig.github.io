@@ -24,7 +24,7 @@ but it has also helped with bone burring, wire insertion and screw fixation amon
 <h3>Conclusion</h3>
 <p align="center"><img src="/icons/fluid/fluid_nodes.png"/></p>
 <p class="justify">This Setup isn't ideal, but it's still a quick, simple and solid solution if you don't want to use simulations.
-I did use this setup as a base for many other uses, so it was worth looking into it. 
+I did end up using this setup as a base for many other things, so it was worth looking into it. 
 </p>
 
 
