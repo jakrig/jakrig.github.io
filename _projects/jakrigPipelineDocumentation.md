@@ -3,6 +3,7 @@ layout: post
 title: Personal pipeline documentation
 description: Personal pipeline documentation
 img: /icons/pipeline/jakrig_icon.png
+date: 2019-01-07 21:02:36
 category: rigging, pipeline
 tag: [maya, rigging, pipeline]
 github-docs: https://k-rig.co.uk/jakrig/

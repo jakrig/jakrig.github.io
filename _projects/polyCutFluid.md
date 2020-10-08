@@ -3,6 +3,7 @@ layout: post
 title: PolyCut based fluid simulation
 description: Experimenting with polyCuts to find an animatable fluid solution. 
 img: /icons/fluid/fluid.png
+date: 2018-04-05 18:18:00
 category: rigging, tools
 tag: [maya, rigging, tools]
 ---
