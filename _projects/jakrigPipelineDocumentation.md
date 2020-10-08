@@ -13,8 +13,6 @@ solutions are subject to change. <a href="https://k-rig.co.uk/jakrig/">Link to d
 
 <h3>Usage</h3>
 
-Examples:
-
 ```python
 # Let's build a simple screw setup as an example.
 from jakrig.metaNodes import DepNode, DagNode
