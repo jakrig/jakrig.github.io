@@ -49,7 +49,7 @@ This is best used as base for granular, automated rigging solutions.
 Using this provides me with complete freedom and I'm not bound to the limitations of mayas internal systems. 
 It also provides me with a much easier way to compile, save and load metaData.
 
-Here is a short snippet of how it would be used in an auto rigging context.
+Here is a short example of how it would be used in an auto rigging context.
 
 ```python
 from jakrig.metaNodes import DepNode, DagNode, Joint
