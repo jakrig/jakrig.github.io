@@ -41,7 +41,7 @@ def create(mesh, axis="Y", defaultSpeed=360):
     screw_ctrl.a["speed"] >> mdl.a["input2"]
     mdl.a["output"] >> screw_parent.a["rotate{}".format(axis.upper())]
     # Finally connect the parent group to the screw_mesh. You can use either a parentConstraint or a matrixConstraint.
-    constraints.matrixConstraint(screw_ctrl, mesh)
+    constraints.matrixConstraint(screw_parent, mesh)
 ```
 
 This is a very basic and simple example but as you can see, everything that's handled by maya (and more) can be done using these meta classes.
@@ -56,8 +56,9 @@ from jakrig.metaNodes import DepNode, DagNode, Joint
 from jakrig.metaNodes.control.controlTypes import Control
 from jakrig.utils import api, attribute, curve, selection, size
 from jakrig.parenting import constraints
+from jakrig.rigging.jakrigCreator.jakrigCore import Core 
 
-class MatrixIKSpline(DagNode):
+class MatrixIKSpline(Core):
     type = 'isSplineIKCurve'
     def __init__(self, curve, joints=5, controls=4):
         DagNode.__init__(self, curve)
