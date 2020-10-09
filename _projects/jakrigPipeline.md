@@ -49,7 +49,7 @@ It also provides me with a much easier way to compile, save and load metaData.
 Here is a short example of how it would be used in an auto rigging context.
 
 ```python
-from jakrig.metaClass import DepNode, DagNode, Joint, Control
+from jakrig.metaClass import DepNode, DagNode, Mesh, Joint, Control, MetaNode
 from jakrig.utils import api, attribute, curve, selection, size
 from jakrig.parenting import constraints
 from jakrig.rigging.jakrigCreator import Core 
@@ -60,7 +60,7 @@ class MatrixIKSpline(Core):
         DagNode.__init__(self, curve)
 
         # variables
-        self._curve = Control(curve)
+        self._curve = DagNode(curve)
         self._shape = self.curve.shapes[0]
         self._jointNumber = joints
         self._controlNumber = controls
