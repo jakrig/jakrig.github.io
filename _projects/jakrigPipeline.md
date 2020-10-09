@@ -16,8 +16,7 @@ solutions are subject to change. <a href="https://k-rig.co.uk/jakrig/">Link to d
 
 ```python
 # Let's build a simple screw setup as an example.
-from jakrig.metaNodes import DepNode, DagNode
-from jakrig.metaNodes.control.controlTypes import Control
+from jakrig.metaClass import DepNode, DagNode, Control
 from jakrig.parenting import constraints
 # The only thing that needs to be given in this example is a screw_mesh. For simplicity's sake let's assume
 # we are working in 0,0,0 in a y-up, z-forward setting.
@@ -50,10 +49,10 @@ It also provides me with a much easier way to compile, save and load metaData.
 Here is a short example of how it would be used in an auto rigging context.
 
 ```python
-from jakrig.metaNodes import DepNode, DagNode, Joint, Control
+from jakrig.metaClass import DepNode, DagNode, Joint, Control
 from jakrig.utils import api, attribute, curve, selection, size
 from jakrig.parenting import constraints
-from jakrig.rigging.jakrigCreator.jakrigCore import Core 
+from jakrig.rigging.jakrigCreator import Core 
 
 class MatrixIKSpline(Core):
     type = 'isSplineIKCurve'
