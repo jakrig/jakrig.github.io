@@ -34,8 +34,9 @@ def create(mesh, axis="Y", defaultSpeed=360):
     mdl = DepNode("screw_mdl")
     mdl.create("multDoubleLinear")
     # Let's use the attribute handler to connect our attributes.
-    screw_ctrl.a["translate{}.".format(axis.upper())] >> mdl.a["input1"]
-    screw_ctrl.a["speed"] >> mdl.a["input2"]
+    screw_ctrl.a["translate{}.".format(axis.upper())].connect(mdl.a["input1"])
+    screw_ctrl.a["speed"].connect(mdl.a["input2"])
+    # You can also use operators to connect attributes
     mdl.a["output"] >> screw_parent.a["rotate{}".format(axis.upper())]
     # Finally connect the parent group to the screw_mesh. You can use either a parentConstraint or a matrixConstraint.
     constraints.matrixConstraint(screw_parent, mesh)
