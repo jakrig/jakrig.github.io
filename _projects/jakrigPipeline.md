@@ -10,7 +10,7 @@ github-docs: https://k-rig.co.uk/jakrig/
 ---
 The "jakrig" pipeline was created for personal use to support work within maya. It's based on various utilites, functions and classes
 that were written over the years and compiled into one rigging pipeline. This is a constant work in progress so all the systems and
-solutions are subject to change. This pipeline is for personal documentation only and is not to be shared. <a href="https://k-rig.co.uk/jakrig/">Link to documentation.</a>
+solutions are subject to change. This pipeline is for personal use only and is not to be shared. <a href="https://k-rig.co.uk/jakrig/">Link to documentation.</a>
 
 <h3>Usage</h3>
 
