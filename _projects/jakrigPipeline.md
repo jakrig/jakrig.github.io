@@ -10,7 +10,7 @@ github-docs: https://k-rig.co.uk/jakrig/
 ---
 The "jakrig" pipeline was created for personal use to support work within maya. It's based on various utilites, functions and classes
 that were written over the years and compiled into one rigging pipeline. This is a constant work in progress so all the systems and
-solutions are subject to change. <a href="https://k-rig.co.uk/jakrig/">Link to documentation.</a>
+solutions are subject to change. This pipeline is for personal documentation only and is not to be shared. <a href="https://k-rig.co.uk/jakrig/">Link to documentation.</a>
 
 <h3>Usage</h3>
 
@@ -43,9 +43,13 @@ def create(mesh, axis="Y", defaultSpeed=360):
 ```
 
 This is a very basic and simple example but as you can see, everything that's handled by maya (and more) can be done using these meta classes.
-This is best used as base for granular, automated rigging solutions. 
+This is best used as base for granular and automated rigging solutions. 
 Using this provides me with complete freedom and I'm not bound to the limitations of mayas internal systems. 
-It also provides me with a much easier way to compile, save and load metaData.
+It also provides me with a much easier way to compile, manage, save and load meta data.
+
+```python
+
+```
 
 Here is a short example of how it would be used in an auto rigging context.
 
