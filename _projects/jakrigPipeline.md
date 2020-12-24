@@ -67,7 +67,7 @@ r_back_leg_system = Limb("r_back_leg", side="right", parentSystem=rig_base_syste
 r_back_leg_system.a["ikHandle"].set("springSolver") #this can also be set manually in the MetaNode or as a kwarg in the build function
 r_back_leg_system.build(*args, **kwargs)
 ```
-Each system has different build options that act as kwargs for the build class. 
+Each system has different build options that act as kwargs for the build function. 
 All build options are baked into the MetaNode so you can either set it directly in the node, 
 through code(as in the example above) or by parsing it as a kwarg in the build function.
 
