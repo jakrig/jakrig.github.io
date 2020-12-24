@@ -16,7 +16,7 @@ This pipeline is for personal use only and is not to be shared.
 <a href="https://k-rig.co.uk/jakrig/">Link to documentation.</a>
 
 <h3>Usage</h3>
-These are a very basic and simple examples that demonstrate various solutions within this pipeline.
+These are very basic and simple examples that demonstrate various solutions within this pipeline.
 Using this provides me with complete freedom and I'm not bound to the limitations of mayas internal systems. 
 Many functions are written using mayas APIs so there are noticeable speed benefits compared to cmds and pymel.
 It also provides me with a much easier way to compile, manage, save and load meta data.
@@ -62,7 +62,7 @@ There are also existing auto rigging solutions for biped, quadruped, props and o
 ```python
 from jakrig.rigging.jakrigCreator import Limb
 
-r_back_leg_system = Limb("r_back_leg", side="right", parentSystem=rig_base_system, linkParent=hip_system.systemDriver)
+r_back_leg_system = Limb("r_back_leg", side="right", parentSystem=rig_base_system, attachParent=hip_system.systemDriver)
 r_back_leg_system.a["ikHandle"].set("springSolver") #this can also be set manually in the MetaNode or as a kwarg in the build function
 r_back_leg_system.build(*args, **kwargs)
 ```
