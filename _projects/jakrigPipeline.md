@@ -54,7 +54,6 @@ from jakrig.metaClass import MetaNode
 from jakrig.rigging.jakrigCreator import Core 
 
 class MatrixIKSpline(Core, MetaNode):
-    type = 'isSplineIKCurve'
     def __init__(self, *args, **kwargs):
         super(MatrixIKSpline, self).__init__(*args, **kwargs)
 ```
