@@ -48,12 +48,12 @@ Here is a short example of how it would be used to create an auto rigging system
 With each system comes a MetaNode that caches all data.
 This helps with modifying the rig after creation and to easily rebuild an existing rigging system.
 All MetaNodes can be linked to combine different setups and all data will be stored to rebuild the whole rig, or each system on it's own.
-In this example we will also inherit from a Core class that has all the functions that every rigging system needs.
+In this example we will also inherit from a Base class that has all the functions that every rigging system needs.
 ```python
 from jakrig.metaClass import MetaNode
-from jakrig.rigging.jakrigCreator import Core 
+from jakrig.rigging.jakrigCreator import Base 
 
-class MatrixIKSpline(Core, MetaNode):
+class MatrixIKSpline(Base, MetaNode):
     def __init__(self, *args, **kwargs):
         super(MatrixIKSpline, self).__init__(*args, **kwargs)
 ```
