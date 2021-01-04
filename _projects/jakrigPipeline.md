@@ -29,7 +29,7 @@ Please refer to the documentation to see what each class can do.
 This is best used as base for granular and automated rigging solutions.
 
 ```python
-from jakrig.metaClass import DagNode, Control, Mesh, Joint
+from jakrig.metaClass import DagNode, Control, Mesh, Joint, Curve
 
 node = DagNode(node) #you can parse any node into this class
 
@@ -41,6 +41,9 @@ mesh.saveWeightsToFile()
 
 joint = Joint(joint) #use this for joints
 joint.localOffsetMatrix(ctrl)
+
+curve = Curve(curve) #use this for curves
+curve.createPointsOnCurve(num)
 ```
 
 <h3>Rigging Solutions</h3>
