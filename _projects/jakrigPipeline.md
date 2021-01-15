@@ -46,6 +46,22 @@ curve = Curve(curve) #use this for curves
 curve.createPointsOnCurve(num)
 ```
 
+<h3>Handling Attributes</h3>
+Once you initiated a class you can index attributes. 
+There are functions for all attributes and the indexed attibute.
+Python operators were overwritten for various cases of attribute handling.
+```python
+from jakrig.metaClass import DagNode, Control
+
+node = DagNode(node)
+ctrl = Control(ctrl)
+
+all_attr = node.a.list()
+ctrl = node.a["translate"].set(100) # You can do everything you can do with API in here. Getting, setting, caching etc. 
+ctrl.a["IKFK"] >> node.a["weight"]
+ctrl.a["IKFK"].connect(node.a["weight"])
+```
+
 <h3>Rigging Solutions</h3>
 Here is a short example of how it would be used to create an auto rigging system that can be rebuilt and reused with different character setups.
 With each system comes a MetaNode that caches all data.
