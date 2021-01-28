@@ -97,24 +97,15 @@ from jakrig.parenting import constraints
 # The only thing that needs to be given in this example is a screw_mesh. For simplicity's sake let's assume
 # we are working in 0,0,0 in a y-up, z-forward setting.
 def create(mesh, axis="Y", defaultSpeed=360):
-    # Create screw control
     screw_ctrl = Control("screw")
     screw_ctrl.create("cirlce", "yellow")
-    # Add speed attribute. The default value is by how many degrees you want the screw to turn when the control is
-    # translated by 1
     screw_ctrl.addAttr("speed", at="float", defaultValue=defaultSpeed)
-    # Next we need to create an empty transform as a child to our control. You can define any nodeType as an argument. 
-    # Default is "transform".
     screw_parent = screw_ctrl.createChild("screw_parent")
-    # Now create a multDoubleLinear node
     mdl = DepNode("screw_mdl")
     mdl.create("multDoubleLinear")
-    # Let's use the attribute handler to connect our attributes.
     screw_ctrl.a["translate{}.".format(axis.upper())].connect(mdl.a["input1"])
     screw_ctrl.a["speed"].connect(mdl.a["input2"])
-    # You can also use operators to connect attributes
     mdl.a["output"] >> screw_parent.a["rotate{}".format(axis.upper())]
-    # Finally connect the parent group to the screw_mesh. You can use either a parentConstraint or a matrixConstraint.
     constraints.matrixConstraint(screw_parent, mesh, mo=True)
 ```
 
