@@ -109,9 +109,6 @@ def create(mesh, axis="Y", defaultSpeed=360):
     constraints.matrixConstraint(screw_parent, mesh, mo=True)
 ```
 
-<h4>Authored by</h4>
-Koji H., Robert Joosten
-
 
 
 
