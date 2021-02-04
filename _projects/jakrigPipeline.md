@@ -70,9 +70,9 @@ All MetaNodes can be linked to combine different setups and all data will be sto
 In this example we will also inherit from a Base class that has all the functions that every rigging system needs.
 ```python
 from jakrig.metaClass import MetaNode
-from jakrig.rigging.jakrigCreator import Base 
+from jakrig.rigging.jakrigCreator import Core 
 
-class MatrixIKSpline(Base, MetaNode):
+class MatrixIKSpline(Core, MetaNode):
     def __init__(self, *args, **kwargs):
         super(MatrixIKSpline, self).__init__(*args, **kwargs)
 ```
